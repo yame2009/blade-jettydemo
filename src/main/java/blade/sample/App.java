@@ -3,7 +3,6 @@ package blade.sample;
 import blade.Blade;
 import blade.BladeApplication;
 import blade.render.JetbrickRender;
-import blade.server.BladeServer;
 
 public class App implements BladeApplication{
 
@@ -19,9 +18,8 @@ public class App implements BladeApplication{
 		
 		Blade.viewEngin(new JetbrickRender());
 	}
-	
+		
 	public static void main(String[] args) {
-		Blade.app(App.class);
-		BladeServer.run(9000);
+		Blade.run(App.class, 9000);
 	}
 }
