@@ -2,9 +2,9 @@ package blade.sample;
 
 import blade.Blade;
 import blade.BladeApplication;
-import blade.render.JetbrickRender;
+import blade.render.BeetlRender;
 
-public class App implements BladeApplication{
+public class App extends BladeApplication{
 
 	@Override
 	public void init() {
@@ -16,7 +16,9 @@ public class App implements BladeApplication{
 		
 		Blade.staticFolder("/res");
 		
-		Blade.viewEngin(new JetbrickRender());
+//		Blade.viewEngin(new JetbrickRender());
+		Blade.viewEngin(new BeetlRender());
+		
 	}
 		
 	public static void main(String[] args) {
