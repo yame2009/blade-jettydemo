@@ -2,8 +2,8 @@ package blade.sample.route;
 
 import blade.annotation.Path;
 import blade.annotation.Route;
-import blade.http.Request;
-import blade.http.Response;
+import blade.servlet.Request;
+import blade.servlet.Response;
 
 @Path
 public class Hello {
